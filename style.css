@@ -1,6 +1,29 @@
+:root{
+    --cor-fundo: #e58d05;
+    --cor-primario: #ffc200;
+    --cor-segundario: #368317;
+    --cor-terciaria: #a4e21c;
+}
+
 *{
     margin: 0;
     padding: 0;
+}
+
+body{
+    background-color: var(--cor-fundo);
+}
+
+.menu_link{
+    background-color: var(--cor-segundario);
+    text-align: center;
+    color: var(--cor-terciaria);
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.menu{
+    background-color: var(--cor-primario);
 }
 
 .logotipo{
