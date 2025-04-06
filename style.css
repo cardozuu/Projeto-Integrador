@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tillana:wght@400;500;600;700;800&display=swap');
+
 :root{
     --cor-fundo: #e58d05;
     --cor-primario: #ffc200;
@@ -14,19 +16,39 @@ body{
     background-color: var(--cor-fundo);
 }
 
+.menu{
+    background-color: var(--cor-primario);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .menu_link{
+    font-family: 'Tillana', serif;
+    font-weight: 700;
+    font-style: Bold;
+    text-decoration: none;
     background-color: var(--cor-segundario);
     text-align: center;
     color: var(--cor-terciaria);
-    padding: 5px;
-    border-radius: 10px;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
 }
 
-.menu{
-    background-color: var(--cor-primario);
+.menu_link:hover{
+    background-color: var(--cor-terciaria);
+    color: var(--cor-segundario);
+    transition: 0.5s;
+}
+
+.menu_link:active{
+    background-color: var(--cor-segundario);
+    color: var(--cor-terciaria);
+    transition: 0.5s;
 }
 
 .logotipo{
     width: 5%;
     height: 5%;
 }
+
