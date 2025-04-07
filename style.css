@@ -51,8 +51,9 @@
 
 #carouselExample {
     margin-top: 20px; /* Espaçamento superior */
-    width: 20%; /* Faz o carrossel ocupar toda a largura da página */
-    margin: 0 auto; /* Remove margens */
+    width: 30%; /* Faz o carrossel ocupar toda a largura da página */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
 }
 
 #carouselExample img {
