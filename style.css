@@ -65,3 +65,13 @@
 .div_quemsomos{
     background-color: wheat;
 }
+
+.whatsapp-container {
+    text-align: center;
+    display: inline-block;
+}
+
+.whatsapp-container span {
+    display: block;
+    margin-bottom: 5px; /* Ajuste o espaçamento entre o texto e o ícone */
+}
