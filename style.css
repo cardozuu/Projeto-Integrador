@@ -12,10 +12,6 @@
     padding: 0;
 }
 
-body{
-    background-color: var(--cor-fundo);
-}
-
 .menu{
     background-color: var(--cor-primario);
     display: flex;
@@ -32,7 +28,8 @@ body{
     text-align: center;
     color: var(--cor-terciaria);
     font-size: 2rem;
-    padding: 15px 10px;
+    padding: 0rem 2rem;
+    flex-grow: 1;
 }
 
 .menu_link:hover{
@@ -53,6 +50,7 @@ body{
 }
 
 #carouselExample {
+    margin-top: 20px; /* Espaçamento superior */
     width: 20%; /* Faz o carrossel ocupar toda a largura da página */
     margin: 0 auto; /* Remove margens */
 }
@@ -61,4 +59,8 @@ body{
     object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
     width: 100%; /* Garante que as imagens ocupem toda a largura */
     height: auto; /* Mantém a proporção da altura */
+}
+
+.div_quemsomos{
+    background-color: wheat;
 }
