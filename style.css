@@ -13,99 +13,31 @@
     padding: 0;
 }
 
-body{
-    background-color: var(--cor-fundo);
-    font-family: 'Tillana', serif;
-    color: var(--cor-primario);
-}
-
-div{
-    background-color: white;
-    border-radius: 10px;  
-    box-shadow: 5px 5px 15px black;
-    width: 1200px;
-    padding: 30px;
-    margin: auto;
-    margin-top: 20px;
-}
-
-h1{
-    color: var(--cor-segundario);
-    text-align: center;
-    text-shadow: 1px 1px 2px black;
-}
-
-h2{
-    color: var(--cor-terciaria);
-}
-
-p{
-    text-align: justify;
-}
-
-.menu{
-    background-color: var(--cor-primario);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.menu_link{
-    font-family: 'Tillana', serif;
-    font-weight: 700;
-    font-style: Bold;
+a{
     text-decoration: none;
-    background-color: var(--cor-segundario);
-    text-align: center;
-    color: var(--cor-terciaria);
-    font-size: 2rem;
-    padding: 0rem 2rem;
-    flex-grow: 1;
+    color: inherit;
 }
 
-.menu_link:hover{
-    background-color: var(--cor-terciaria);
-    color: var(--cor-segundario);
-    transition: 0.5s;
-}
+.container {
+    display: grid;
+    grid-template-columns: 25vw 25vw 25vw 25vw;
+    grid-template-rows: 10vh 30vh 10vh 20vh 30vh;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Logo Logo Menu Menu"
+      "Logo Logo Carrosel Carrosel"
+      "Principal Principal Carrosel Carrosel"
+      "Principal Principal Informação Informação"
+      "Principal Principal Evento Evento";
+  }
+  .Logo { grid-area: Logo; }
+  .Menu { grid-area: Menu; }
+  .Carrosel { grid-area: Carrosel; }
+  .Informação { grid-area: Informação; }
+  .Evento { grid-area: Evento; }
+  .Principal { grid-area: Principal; }
 
-.menu_link:active{
-    background-color: var(--cor-segundario);
-    color: var(--cor-terciaria);
-    transition: 0.5s;
-}
-
-.logotipo{
-    width: 5%;
-    height: 5%;
-}
-
-#carouselExample {
-    margin-top: 20px; /* Espaçamento superior */
-    width: 30%; /* Faz o carrossel ocupar toda a largura da página */
-    margin-left: auto; /* Centraliza horizontalmente */
-    margin-right: auto; /* Centraliza horizontalmente */
-}
-
-#carouselExample img {
-    object-fit: cover; /* Ajusta a imagem para cobrir o espaço */
-    width: 100%; /* Garante que as imagens ocupem toda a largura */
-    height: auto; /* Mantém a proporção da altura */
-}
-
-.div_quemsomos{
-    background-color: wheat;
-}
-
-.whatsapp-container {
-    margin-top: 20px;
-    width: 25%;
-    text-align: center;
-    display: inline-block;
-    background-color: rgb(207, 205, 205);
-}
-
-.whatsapp-container span {
-    display: block;
-    margin-bottom: 5px; /* Ajuste o espaçamento entre o texto e o ícone */
+.Principal,.Carrosel,.Informação,.Evento,.Menu,.Logo{
+    background-color: grey;
+    margin: 3px;
 }
