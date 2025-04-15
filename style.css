@@ -3,7 +3,7 @@
 
 :root{
     --cor-fundo: #e58d05;
-    --cor-primario: #ffc200;
+    --cor-primario: #ffe07aea;
     --cor-segundario: #368317;
     --cor-terciaria: #a4e21c;
 }
@@ -18,26 +18,7 @@ a{
     color: inherit;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: 25vw 25vw 25vw 25vw;
-    grid-template-rows: 10vh 30vh 10vh 20vh 30vh;
-    gap: 0px 0px;
-    grid-template-areas:
-      "Logo Logo Menu Menu"
-      "Logo Logo Carrosel Carrosel"
-      "Principal Principal Carrosel Carrosel"
-      "Principal Principal Informação Informação"
-      "Principal Principal Evento Evento";
-  }
-  .Logo { grid-area: Logo; }
-  .Menu { grid-area: Menu; }
-  .Carrosel { grid-area: Carrosel; }
-  .Informação { grid-area: Informação; }
-  .Evento { grid-area: Evento; }
-  .Principal { grid-area: Principal; }
-
-.Principal,.Carrosel,.Informação,.Evento,.Menu,.Logo{
-    background-color: grey;
-    margin: 3px;
+.logotipo{
+    width: 5%;
+    height: 5%;
 }
