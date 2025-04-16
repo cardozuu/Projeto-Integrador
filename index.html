@@ -1,33 +1,273 @@
 <!DOCTYPE html>
-<html lang="por_br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milhito</title>
+    <title>MILHITO - Comidas Juninas</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="menu">
-        <img src="asset/milhito_2.png" alt="logo" class="logotipo">
+    <header>
+        <div class="logo-container">
+            <img src="imagens/Logo_Milhito.jpg" class="logo">
+            <h1>MILHITO</h1>
+        </div>
         <nav>
-            <a class="menu_link" href="index.html">Inicio</a>
-            <a class="menu_link" href="pag2.html">Produtos</a>
-            <a class="menu_link" href="pag3.html">Contato</a>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#team">Equipe</a></li>
+                <li><a href="#location">Localização</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
         </nav>
     </header>
+
     <main>
-        <div class="carrousel">
-            Carrousel de imagens
-        </div>
-        <div class="descricao">
-            <h1>Milhito</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima earum veritatis ab dolores facilis cum dicta voluptatem voluptatum, fugit saepe sunt itaque aliquid aliquam molestias cupiditate. Perspiciatis dolores quae molestias.</p>
-        </div>
-        <div class="evento">
-            <h1>Evento</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d709.8252273256514!2d-50.43730625269037!3d-22.649413035666804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDM4JzU4LjgiUyA1MMKwMjYnMTUuMiJX!5e0!3m2!1spt-BR!2sbr!4v1744737418461!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima earum veritatis ab dolores facilis cum dicta voluptatem voluptatum, fugit saepe sunt itaque aliquid aliquam molestias cupiditate. Perspiciatis dolores quae molestias.</p>
-        </div>
+        <section id="home">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="imagens/Milharau_Milhito.jpg" alt="Campo de milho">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/Bolo_de_milho.jpg" alt="Bolo de milho">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagens/Brigadeiro_milhito.jpg" alt="Brigadeiro de milho">
+                    </div>
+                </div>
+                <button class="carousel-control prev">&lt;</button>
+                <button class="carousel-control next">&gt;</button>
+                <div class="carousel-indicators">
+                    <div class="indicator active"></div>
+                    <div class="indicator"></div>
+                    <div class="indicator"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products">
+            <h2>Nossos Produtos</h2>
+            <div class="products">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="imagens/Bolo_de_milho.jpg" alt="Bolo de Milho">
+                    </div>
+                    <div class="product-info">
+                        <h3>Bolo de Milho</h3>
+                        <p>Delicioso bolo de milho feito com milho fresco e ingredientes selecionados, perfeito para festas juninas.</p>
+                        <p class="price">R$ 25,00 (unidade)</p>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="imagens/Brigadeiro_milhito.jpg" alt="Brigadeiro de Milho">
+                    </div>
+                    <div class="product-info">
+                        <h3>Brigadeiro de Milho</h3>
+                        <p>Nosso brinde especial: brigadeiro feito com milho, uma combinação única de sabores que vai surpreender você.</p>
+                        <p class="price">R$ 2,50 (unidade)</p>
+                    </div>
+                </div>
+              
+                </div>
+            </div>
+        </section>
+
+        <section id="team">
+            <h2>Nossa Equipe</h2>
+            <div class="team">
+                <div class="team-member">
+                    <img src="" alt="Membro da equipe">
+                    <h3>Nome 1 </h3>
+                    <p>Função</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="Membro da equipe">
+                    <h3>Nome2</h3>
+                    <p>Função</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="Membro da equipe">
+                    <h3>nome 3</h3>
+                    <p>Função</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="Membro da equipe">
+                    <h3>nome 4</h3>
+                    <p>Função</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="Membro da equipe">
+                    <h3>nome 5</h3>
+                    <p>Função</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="Membro da equipe">
+                    <h3>nome 6</h3>
+                    <p>Função</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="Membro da equipe">
+                    <h3>nome 7</h3>
+                    <p>Função</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="Membro da equipe">
+                    <h3>nome 8</h3>
+                    <p>Função</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="location">
+            <h2>Onde Estamos</h2>
+            <div class="map-container">
+                <iframe src="https://maps.google.com/maps?q=Av.%20Dom%20Ant%C3%B4nio,%202100%20-%20Parque%20Universitario,%20Assis%20-%20SP,%2019806-900&output=embed"" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Entre em Contato</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>Telefone</h3>
+                    <p>(11) 98765-4321</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <p>A definir</p>
+                </div>
+                <div class="contact-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Horário de Atendimento</h3>
+                    <p>Segunda a Sexta: definir</p>
+                    <p>Sábado: definir</p>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://wa.me/5511987654321" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://facebook.com/sitiodomilhoamarelo" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://instagram.com/sitiodomilhoamarelo" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </section>
     </main>
-</body>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sobre Nós</h3>
+                <p>O MILHITO é um projeto do grupo GCom da faculdade, especializado em comidas juninas com foco no milho.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <a href="#home">Início</a>
+                <a href="#products">Produtos</a>
+                <a href="#team">Equipe</a>
+                <a href="#location">Localização</a>
+                <a href="#contact">Contato</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p><i class="fas fa-map-marker-alt"></i>  Av. Dom Antônio, 2100  - Parque Universitario  Unesp - Faculdade de Ciências e Letras</p>
+                <p><i class="fas fa-phone"></i> (11) 98765-4321</p>
+                <p><i class="fas fa-envelope"></i> contato@sitiodomilhoamarelo.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 MILHITO - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Carrossel
+            const carouselInner = document.querySelector('.carousel-inner');
+            const carouselItems = document.querySelectorAll('.carousel-item');
+            const prevBtn = document.querySelector('.carousel-control.prev');
+            const nextBtn = document.querySelector('.carousel-control.next');
+            const indicators = document.querySelectorAll('.indicator');
+            
+            let currentIndex = 0;
+            const itemCount = carouselItems.length;
+            
+            function updateCarousel() {
+                carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
+                
+                indicators.forEach((indicator, index) => {
+                    if (index === currentIndex) {
+                        indicator.classList.add('active');
+                    } else {
+                        indicator.classList.remove('active');
+                    }
+                });
+            }
+            
+            prevBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex - 1 + itemCount) % itemCount;
+                updateCarousel();
+            });
+            
+            nextBtn.addEventListener('click', () => {
+                currentIndex = (currentIndex + 1) % itemCount;
+                updateCarousel();
+            });
+            
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateCarousel();
+                });
+            });
+            
+            // Auto-rotate carousel
+            let carouselInterval = setInterval(() => {
+                currentIndex = (currentIndex + 1) % itemCount;
+                updateCarousel();
+            }, 5000);
+            
+            // Pause on hover
+            const carousel = document.querySelector('.carousel');
+            carousel.addEventListener('mouseenter', () => {
+                clearInterval(carouselInterval);
+            });
+            
+            carousel.addEventListener('mouseleave', () => {
+                carouselInterval = setInterval(() => {
+                    currentIndex = (currentIndex + 1) % itemCount;
+                    updateCarousel();
+                }, 5000);
+            });
+            
+            // Smooth scrolling for navigation
+            document.querySelectorAll('nav a').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            // Form submission (simulated)
+            const contactForm = document.querySelector('form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+                    this.reset();
+                });
+            }
+        });
+    </script>
+</body> 
 </html>
