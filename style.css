@@ -311,6 +311,12 @@ h2::after {
     transform: translateY(-3px);
 }
 
+.social-links img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
 footer {
     background-color: var(--dark-color);
     color: white;
