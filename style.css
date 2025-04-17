@@ -33,6 +33,7 @@ header {
     align-items: center;
     justify-content: center;
     margin-bottom: 1rem;
+    font-size: 2rem;
 }
 
 .logo {
@@ -165,16 +166,19 @@ h2::after {
 
 .products {
     display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     gap: 9rem;
 }
 
 .product-card {
+    display: flex;
+    align-items: center;
     background-color: white;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
 }
 
 .product-card:hover {
@@ -182,14 +186,25 @@ h2::after {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+.product-card .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
 .product-image {
-    height: 200px;
+    flex: 1;
+    height: 100%;
     overflow: hidden;
 }
 
 .product-image img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     transition: transform 0.5s;
 }
@@ -199,6 +214,7 @@ h2::after {
 }
 
 .product-info {
+    flex: 2;
     padding: 1.5rem;
 }
 
