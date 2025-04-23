@@ -240,9 +240,18 @@ h2::after {
 }
 
 .team {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px; /* Espaçamento entre os membros */
+}
+
+.team-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .team-member {
@@ -251,6 +260,7 @@ h2::after {
     padding: 1.5rem;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(16.66% - 10px); /* 6 membros em uma linha */
 }
 
 .team-member img {
@@ -271,6 +281,42 @@ h2::after {
     color: var(--secondary-color);
     font-style: italic;
 }
+
+.team-intro {
+    flex: 1 1 100%; /* Ocupa toda a largura */
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px; /* Adiciona espaçamento interno */
+    background-color: #f9f9f9; /* Cor de fundo para destaque */
+    border-radius: 10px; /* Bordas arredondadas */
+    font-size: 1.2rem; /* Aumenta o tamanho da fonte */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+}
+.team-intro h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.team-intro p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.team-intro a {
+    display: block; /* Faz o link ocupar toda a largura disponível */
+    text-align: center; /* Centraliza o texto */
+    font-size: 2rem; /* Aumenta o tamanho da fonte */
+    font-weight: bold; /* Deixa o texto em negrito */
+    margin-top: 70px; /* Adiciona um espaçamento superior */
+    color: var(--secondary-color); /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+.team-intro a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
 
 .map-container {
     height: 400px;
@@ -438,48 +484,4 @@ footer {
 
 .carousel-team-control.next {
     right: 10px;
-}
-
-.team-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.team-intro {
-    flex: 2;
-    max-width: 600px;
-    text-align: left;
-    background-color: #f9f9f9;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    min-height: 300px;
-}
-
-.team-intro h3 {
-    text-align: center;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.team-intro p {
-    color: #555;
-    line-height: 1.6;
-}
-
-.team-intro a {
-    display: block; /* Faz o link ocupar toda a largura disponível */
-    text-align: center; /* Centraliza o texto */
-    font-size: 2rem; /* Aumenta o tamanho da fonte */
-    font-weight: bold; /* Deixa o texto em negrito */
-    margin-top: 70px; /* Adiciona um espaçamento superior */
-    color: var(--secondary-color); /* Cor do texto */
-    text-decoration: none; /* Remove o sublinhado */
-}
-
-.team-intro a:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
