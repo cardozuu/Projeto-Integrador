@@ -76,6 +76,53 @@
             </div>
         </section>
 
+        <section id="assessments">
+            <h2>Avaliações</h2>
+            <div class="assessments-container">
+                <div class="assessments-card">
+                    <ul class="avaliacao">
+                        <li class="star-icon ativo" data-avaliacao="1"></li>
+                        <li class="star-icon" data-avaliacao="2"></li>
+                        <li class="star-icon" data-avaliacao="3"></li>
+                        <li class="star-icon" data-avaliacao="4"></li>
+                        <li class="star-icon" data-avaliacao="5"></li>
+                    </ul>
+                    <p>"O bolo de milho é simplesmente maravilhoso! Nunca provei algo tão gostoso."</p>
+                    <p class="client-name">- Maria</p>
+                </div>
+                <div class="assessments-card">
+                    <ul class="avaliacao">
+                        <li class="star-icon ativo" data-avaliacao="1"></li>
+                        <li class="star-icon ativo" data-avaliacao="2"></li>
+                        <li class="star-icon ativo" data-avaliacao="3"></li>
+                        <li class="star-icon ativo" data-avaliacao="4"></li>
+                        <li class="star-icon" data-avaliacao="5"></li>
+                    </ul>
+                    <p>"A qualidade dos produtos é excepcional. Recomendo a todos!"</p>
+                    <p class="client-name">- João</p>  
+                </div>
+                <div class="assessments-card">
+                    <ul class="avaliacao">
+                        <li class="star-icon ativo" data-avaliacao="1"></li>
+                        <li class="star-icon ativo" data-avaliacao="2"></li>
+                        <li class="star-icon ativo" data-avaliacao="3"></li>
+                        <li class="star-icon ativo" data-avaliacao="4"></li>
+                        <li class="star-icon ativo" data-avaliacao="5"></li>
+                    </ul>
+                    <p>"O brigadeiro de milho é uma explosão de sabor! Adorei!"</p>
+                    <p class="client-name">- Ana</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="location">
+            <h2>Onde Estamos</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1373.2297708049364!2d-50.43720668791457!3d-22.65020919176208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDM4JzU4LjgiUyA1MMKwMjYnMTUuMyJX!5e1!3m2!1spt-BR!2sbr!4v1744817216059!5m2!1spt-BR!2sbr"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+
         <section id="team">
             <h2>Nossa Equipe</h2>
             <div class="team">
@@ -180,13 +227,6 @@
                 </div>
             </div>
         </section> -->
-
-        <section id="location">
-            <h2>Onde Estamos</h2>
-            <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1373.2297708049364!2d-50.43720668791457!3d-22.65020919176208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjLCsDM4JzU4LjgiUyA1MMKwMjYnMTUuMyJX!5e1!3m2!1spt-BR!2sbr!4v1744817216059!5m2!1spt-BR!2sbr"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-        </section>
 
         <section id="contact">
             <h2>Entre em Contato</h2>
@@ -329,29 +369,42 @@
             }
         });
         // Carrossel da equipe
-    document.addEventListener('DOMContentLoaded', function() {
-        const teamCarouselInner = document.querySelector('#team .carousel-team-inner');
-        const teamCarouselItems = document.querySelectorAll('#team .carousel-team-item');
-        const teamPrevBtn = document.querySelector('#team .carousel-team-control.prev');
-        const teamNextBtn = document.querySelector('#team .carousel-team-control.next');
+        document.addEventListener('DOMContentLoaded', function() {
+            const teamCarouselInner = document.querySelector('#team .carousel-team-inner');
+            const teamCarouselItems = document.querySelectorAll('#team .carousel-team-item');
+            const teamPrevBtn = document.querySelector('#team .carousel-team-control.prev');
+            const teamNextBtn = document.querySelector('#team .carousel-team-control.next');
 
-        let teamCurrentIndex = 0;
-        const teamItemCount = teamCarouselItems.length;
+            let teamCurrentIndex = 0;
+            const teamItemCount = teamCarouselItems.length;
 
-        function updateTeamCarousel() {
-            teamCarouselInner.style.transform = `translateX(-${teamCurrentIndex * 100}%)`;
-        }
+            function updateTeamCarousel() {
+                teamCarouselInner.style.transform = `translateX(-${teamCurrentIndex * 100}%)`;
+            }
 
-        teamPrevBtn.addEventListener('click', () => {
-            teamCurrentIndex = (teamCurrentIndex - 1 + teamItemCount) % teamItemCount;
-            updateTeamCarousel();
+            teamPrevBtn.addEventListener('click', () => {
+                teamCurrentIndex = (teamCurrentIndex - 1 + teamItemCount) % teamItemCount;
+                updateTeamCarousel();
+            });
+
+            teamNextBtn.addEventListener('click', () => {
+                teamCurrentIndex = (teamCurrentIndex + 1) % teamItemCount;
+                updateTeamCarousel();
+            });
         });
+    </script>
+    <script>
+        var stars = document.querySelectorAll('.star-icon');
 
-        teamNextBtn.addEventListener('click', () => {
-            teamCurrentIndex = (teamCurrentIndex + 1) % teamItemCount;
-            updateTeamCarousel();
-        });
-    });
+        document.addEventListener('click', function(e){
+            var classStar = e.target.classList; 
+            if(!classStar.contains('ativo')){
+                stars.forEach(function(star){
+                    star.classList.remove('ativo');
+                });
+                classStar.add('ativo');
+            }
+        })
     </script>
 </body> 
 </html>
