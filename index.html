@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Milhito - Comidas Juninas</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="js/carrousel.js"></script>
 </head>
 <body>
     <header>
@@ -61,58 +62,12 @@
                         <p class="price">R$ 25,00 (unidade)</p>
                     </div>
                 </div>
-                <!--<div class="product-card">
-                    <div class="product-image">
-                        <img src="imagens/Brigadeiro_milhito.jpg" alt="Brigadeiro de Milho">
-                    </div>
-                    <div class="product-info">
-                        <h3>Brigadeiro de Milho</h3>
-                        <p>Nosso brinde especial: brigadeiro feito com milho, uma combinação única de sabores que vai surpreender você.</p>
-                        <p class="price">R$ 2,50 (unidade)</p>
-                    </div>
-                </div>-->
-              
-                </div>
             </div>
         </section>
 
         <section id="assessments">
             <h2>Avaliações</h2>
-            <div class="assessments-container">
-                <div class="assessments-card">
-                    <ul class="avaliacao">
-                        <li class="star-icon ativo" data-avaliacao="1"></li>
-                        <li class="star-icon" data-avaliacao="2"></li>
-                        <li class="star-icon" data-avaliacao="3"></li>
-                        <li class="star-icon" data-avaliacao="4"></li>
-                        <li class="star-icon" data-avaliacao="5"></li>
-                    </ul>
-                    <p>"O bolo de milho é simplesmente maravilhoso! Nunca provei algo tão gostoso."</p>
-                    <p class="client-name">- Maria</p>
-                </div>
-                <div class="assessments-card">
-                    <ul class="avaliacao">
-                        <li class="star-icon ativo" data-avaliacao="1"></li>
-                        <li class="star-icon ativo" data-avaliacao="2"></li>
-                        <li class="star-icon ativo" data-avaliacao="3"></li>
-                        <li class="star-icon ativo" data-avaliacao="4"></li>
-                        <li class="star-icon" data-avaliacao="5"></li>
-                    </ul>
-                    <p>"A qualidade dos produtos é excepcional. Recomendo a todos!"</p>
-                    <p class="client-name">- João</p>  
-                </div>
-                <div class="assessments-card">
-                    <ul class="avaliacao">
-                        <li class="star-icon ativo" data-avaliacao="1"></li>
-                        <li class="star-icon ativo" data-avaliacao="2"></li>
-                        <li class="star-icon ativo" data-avaliacao="3"></li>
-                        <li class="star-icon ativo" data-avaliacao="4"></li>
-                        <li class="star-icon ativo" data-avaliacao="5"></li>
-                    </ul>
-                    <p>"O brigadeiro de milho é uma explosão de sabor! Adorei!"</p>
-                    <p class="client-name">- Ana</p>
-                </div>
-            </div>
+            
         </section>
 
         <section id="location">
@@ -165,90 +120,35 @@
             </div>
         </section>
 
-        <!--<section id="team">
-            <h2>Nossa Equipe</h2>
-
-            <div class="team-container">
-                <div class="carousel-team">
-                    <button class="carousel-team-control prev">&lt;</button>
-                    <div class="carousel-team-inner">
-                        <div class="carousel-team-item active">
-                            <div class="team-member">
-                                <img src="imagens/ana.jpeg" alt="Ana">
-                                <h3>Ana</h3>
-                                <p>Função</p>
-                            </div>
-                        </div>
-                        <div class="carousel-team-item">
-                            <div class="team-member">
-                                <img src="imagens/paulo.jpeg" alt="Paulo">
-                                <h3>Paulo</h3>
-                                <p>Função</p>
-                            </div>
-                        </div>
-                        <div class="carousel-team-item">
-                            <div class="team-member">
-                                <img src="imagens/hellen.jpeg" alt="Hellen">
-                                <h3>Hellen</h3>
-                                <p>Função</p>
-                            </div>
-                        </div>
-                        <div
-                        class="carousel-team-item">
-                            <div class="team-member">
-                                <img src="imagens/luis.jpeg" alt="Luis">
-                                <h3>Luis</h3>
-                                <p>Função</p>
-                            </div>
-                        </div>
-                        <div
-                        class="carousel-team-item">
-                            <div class="team-member">
-                                <img src="imagens/gabriele.jpeg" alt="Gabriele">
-                                <h3>Gabriele</h3>
-                                <p>Função</p>
-                            </div>
-                        </div>
-                        <div
-                        class="carousel-team-item">
-                            <div class="team-member">
-                                <img src="imagens/giuliana.jpeg" alt="Giuliana">
-                                <h3>Giuliana</h3>
-                                <p>Função</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-team-control next">&gt;</button>
-                </div>
-                <div class="team-intro">
-                    <h3>Sobre a Equipe</h3>
-                    <p>Somos um grupo dedicado a oferecer as melhores comidas juninas, com foco em qualidade e tradição. Conheça nossa equipe!</p>
-                    <a href="pag2.html" target="_blank" rel="noopener noreferrer">Tudo sobre nos</a>
-                </div>
+        <section id="form">
+            <h2>Deixe sua Avaliação</h2>
+            <div class="form-card">
+                <form id="assessments-form" action="salvar_avaliacao.php" method="POST">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                
+                    <label for="avaliacao">Avaliação:</label>
+                    <input type="hidden" id="avaliacao" name="avaliacao" value="5">
+                    <ul class="avaliacao">
+                        <li class="star-icon ativo" data-avaliacao="1"></li>
+                        <li class="star-icon" data-avaliacao="2"></li>
+                        <li class="star-icon" data-avaliacao="3"></li>
+                        <li class="star-icon" data-avaliacao="4"></li>
+                        <li class="star-icon" data-avaliacao="5"></li>
+                    </ul>
+                
+                    <button type="submit">Enviar</button>
+                </form>
             </div>
-        </section> -->
+        </section>
 
         <section id="contact">
-            <h2>Entre em Contato</h2>
-            <div class="contact-info">
-                <div class="contact-card">
-                    <i class="fas fa-phone"></i>
-                    <h3>Telefone</h3>
-                    <p>A definir</p>
-                </div>
-                <div class="contact-card">
-                    <i class="fas fa-envelope"></i>
-                    <h3>Email</h3>
-                    <p>A definir</p>
-                </div>
-                <div class="contact-card">
-                    <i class="fas fa-clock"></i>
-                    <h3>Horário de Atendimento</h3>
-                    <p>Segunda a Sexta: definir</p>
-                    <p>Sábado: definir</p>
-                </div>
+            <h2>Contato</h2>
             </div>
-            
+
             <div class="social-links">
                 <a href="https://wa.me/5511987654321" target="_blank" aria-label="WhatsApp"><img src="imagens/whatsapp.jpg" alt=""><i class="fab fa-whatsapp"></i></a>
                 <a href="https://facebook.com/sitiodomilhoamarelo" target="_blank" aria-label="Facebook"><img src="imagens/facebook-icon.png" alt=""><i class="fab fa-facebook-f"></i></a>
@@ -282,129 +182,16 @@
             <p>&copy; 2025 MILHITO - Todos os direitos reservados</p>
         </div>
     </footer>
-
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Carrossel
-            const carouselInner = document.querySelector('.carousel-inner');
-            const carouselItems = document.querySelectorAll('.carousel-item');
-            const prevBtn = document.querySelector('.carousel-control.prev');
-            const nextBtn = document.querySelector('.carousel-control.next');
-            const indicators = document.querySelectorAll('.indicator');
-            
-            let currentIndex = 0;
-            const itemCount = carouselItems.length;
-            
-            function updateCarousel() {
-                carouselInner.style.transform = `translateX(-${currentIndex * 100}%)`;
-                
-                indicators.forEach((indicator, index) => {
-                    if (index === currentIndex) {
-                        indicator.classList.add('active');
-                    } else {
-                        indicator.classList.remove('active');
-                    }
-                });
-            }
-            
-            prevBtn.addEventListener('click', () => {
-                currentIndex = (currentIndex - 1 + itemCount) % itemCount;
-                updateCarousel();
-            });
-            
-            nextBtn.addEventListener('click', () => {
-                currentIndex = (currentIndex + 1) % itemCount;
-                updateCarousel();
-            });
-            
-            indicators.forEach((indicator, index) => {
-                indicator.addEventListener('click', () => {
-                    currentIndex = index;
-                    updateCarousel();
-                });
-            });
-            
-            // Auto-rotate carousel
-            let carouselInterval = setInterval(() => {
-                currentIndex = (currentIndex + 1) % itemCount;
-                updateCarousel();
-            }, 5000);
-            
-            // Pause on hover
-            const carousel = document.querySelector('.carousel');
-            carousel.addEventListener('mouseenter', () => {
-                clearInterval(carouselInterval);
-            });
-            
-            carousel.addEventListener('mouseleave', () => {
-                carouselInterval = setInterval(() => {
-                    currentIndex = (currentIndex + 1) % itemCount;
-                    updateCarousel();
-                }, 5000);
-            });
-            
-            // Smooth scrolling for navigation
-            document.querySelectorAll('nav a').forEach(anchor => {
-                anchor.addEventListener('click', function(e) {
-                    e.preventDefault();
-                    
-                    const targetId = this.getAttribute('href');
-                    const targetElement = document.querySelector(targetId);
-                    
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 70,
-                        behavior: 'smooth'
-                    });
-                });
-            });
-            
-            // Form submission (simulated)
-            const contactForm = document.querySelector('form');
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
-                    this.reset();
-                });
-            }
-        });
-        // Carrossel da equipe
-        document.addEventListener('DOMContentLoaded', function() {
-            const teamCarouselInner = document.querySelector('#team .carousel-team-inner');
-            const teamCarouselItems = document.querySelectorAll('#team .carousel-team-item');
-            const teamPrevBtn = document.querySelector('#team .carousel-team-control.prev');
-            const teamNextBtn = document.querySelector('#team .carousel-team-control.next');
+        document.querySelectorAll('.star-icon').forEach(star => {
+            star.addEventListener('click', function () {
+                const rating = this.getAttribute('data-avaliacao');
+            document.getElementById('avaliacao').value = rating;
 
-            let teamCurrentIndex = 0;
-            const teamItemCount = teamCarouselItems.length;
-
-            function updateTeamCarousel() {
-                teamCarouselInner.style.transform = `translateX(-${teamCurrentIndex * 100}%)`;
-            }
-
-            teamPrevBtn.addEventListener('click', () => {
-                teamCurrentIndex = (teamCurrentIndex - 1 + teamItemCount) % teamItemCount;
-                updateTeamCarousel();
-            });
-
-            teamNextBtn.addEventListener('click', () => {
-                teamCurrentIndex = (teamCurrentIndex + 1) % teamItemCount;
-                updateTeamCarousel();
+            document.querySelectorAll('.star-icon').forEach(s => s.classList.remove('ativo'));
+            this.classList.add('ativo');
             });
         });
-    </script>
-    <script>
-        var stars = document.querySelectorAll('.star-icon');
-
-        document.addEventListener('click', function(e){
-            var classStar = e.target.classList; 
-            if(!classStar.contains('ativo')){
-                stars.forEach(function(star){
-                    star.classList.remove('ativo');
-                });
-                classStar.add('ativo');
-            }
-        })
     </script>
 </body> 
 </html>

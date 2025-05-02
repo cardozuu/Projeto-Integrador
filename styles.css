@@ -263,6 +263,7 @@ h2::after {
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Distribui o conteúdo uniformemente */
+    height: 300px; /* Garante que todos os cards tenham a mesma altura */
 }
 
 .avaliacao{
@@ -408,6 +409,52 @@ h2::after {
     font-size: 2rem;
     color: var(--primary-color);
     margin-bottom: 1rem;
+}
+
+.form-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-card form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-card label {
+    font-weight: bold;
+}
+
+.form-card input,
+.form-card textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-card button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-card button:hover {
+    background-color: #45a049;
+}
+
+#form .avaliacao .star-icon::before {
+    font-size: 3rem; /* Aumenta o tamanho das estrelas */
+    margin-right: 8px; /* Ajusta o espaçamento entre as estrelas */
 }
 
 .social-links {
