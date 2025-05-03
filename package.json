@@ -1,0 +1,16 @@
+{
+    "name": "projeto-integrador",
+    "version": "1.0.0",
+    "description": "Projeto Integrador - Milhito",
+    "main": "index.js",
+    "scripts": {
+    "dev": "vercel dev",
+    "start": "node index.js"
+  },
+    "keywords": [],
+    "author": "Jean Pedroso",
+    "license": "ISC",
+    "dependencies": {
+      "mysql2": "^3.2.0"
+    }
+}
